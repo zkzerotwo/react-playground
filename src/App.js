@@ -6,7 +6,8 @@ import './composition/Split.css';
 // import Bomb from './state-drills/Bomb'
 // import HelloWorld from './state-drills/HelloWorld'
 // import Tabs from './state/Tabs'
-import Accordion from './state-drills/Accordion'
+// import Accordion from './state-drills/Accordion'
+import DemonymApp from './state/demonymapp/DemonymApp'
 
 const tabsProp = [
   {
@@ -45,7 +46,8 @@ function App() {
       {/* <HelloWorld /> */}
       {/* <Bomb /> */}
       {/* <Tabs tabs={tabsProp}/> */}
-        <Accordion sections={sections} />
+        {/* <Accordion sections={sections} /> */}
+        {/* <DemonymApp /> */}
     </main>
   );
 }

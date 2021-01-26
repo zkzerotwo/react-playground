@@ -1,8 +1,8 @@
 import React from 'react'
 
 class Accordion extends React.Component {
-    static defaultProps = { 
-        sections: [] 
+    static defaultProps = {
+        sections: []
     };
 
     state = {
@@ -10,18 +10,18 @@ class Accordion extends React.Component {
     };
 
     setSectionIndex = (sectionIndex) => {
-        this.setState({currentSectionIndex: sectionIndex})
+        this.setState({ currentSectionIndex: sectionIndex })
     }
-    
+
     renderListItem(sections, index, sectionIndex) {
         return (
             <li key={index}>
                 <button onClick={() => this.setSectionIndex(index)}>
-                {sections.title}
-            </button>
-            {(sectionIndex === index) && <p>
-                {sections.content}
-            </p>}
+                    {sections.title}
+                </button>
+                {(sectionIndex === index) && <p>
+                    {sections.content}
+                </p>}
             </li>
         )
     }
@@ -32,8 +32,8 @@ class Accordion extends React.Component {
         const { sections } = this.props
         return (
             <ul>
-                {sections.map((sections, index) => 
-                this.renderListItem(sections, index, currentSectionIndex)
+                {sections.map((sections, index) =>
+                    this.renderListItem(sections, index, currentSectionIndex)
                 )}
             </ul>
         )

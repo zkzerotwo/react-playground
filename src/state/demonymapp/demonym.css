@@ -1,0 +1,9 @@
+body {
+    background-color: black;
+}
+.demonym {
+    border: 5px;
+    border-style: groove;
+    border-color: goldenrod;
+    /* background-image: url("src/images/transparent.jpg"); */
+}

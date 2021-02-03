@@ -27,7 +27,7 @@ class Accordion extends React.Component {
     }
 
     render() {
-        // console.log(this.props.sections)
+        console.log(this.props.sections)
         const { currentSectionIndex } = this.state
         const { sections } = this.props
         return (

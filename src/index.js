@@ -2,14 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import App from './App'
-import App from './paltrows-power-toes/App';
+// import App from './paltrows-power-toes/App';
+import AppLang from './lang-context/AppLang'
 import { BrowserRouter } from "react-router-dom";
 // import App from './state/ShoppingListApp/App';
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(<BrowserRouter>
-    <App />
+    <AppLang />
 </BrowserRouter>, document.getElementById('root'));
 
 
